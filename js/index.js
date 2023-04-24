@@ -1,8 +1,13 @@
+
 import { Header } from './header.js';
+import { SearchAndSort } from './searchAndSort.js';
+
 // Точка входа в app
 const createApp = () => {
   const header = Header();
-  document.body.append(header);
+  const searchSort = SearchAndSort();
+  document.body.append(header, searchSort);
+
 }
 // Запуск app
 createApp();
