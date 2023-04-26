@@ -1,3 +1,4 @@
+import { modalCreate } from "./modalCreate.js"
 export const Header = () => {
   // console.log(document.getElementById('header')); // если бы header был в html
   // const headerTag = document.querySelectorAll('.header'); // . - обращение по классу, # - обращение по ID
@@ -11,6 +12,8 @@ export const Header = () => {
   const createImg = document.createElement('div')
   const createImgElement = document.createElement('img')
 
+  // добавить функцию 'слушатель событий'
+  createImgElement.addEventListener('click', modalCreate)
 
   // Добавление атрибутов 
   header.classList.add('header')
